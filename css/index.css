@@ -3221,7 +3221,7 @@ h1.page-title + .tag-cloud-list {
 }
 @media screen and (min-width: 768px) {
   #page-header #site-subtitle {
-    font-size: 0.88em;
+    font-size: 1.02em;
   }
 }
 #page-header #site_social_icons {
