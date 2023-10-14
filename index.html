@@ -1,209 +1,387 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>小邹同学 - 小邹同学个人博客</title><meta name="author" content="Dream星辰"><meta name="copyright" content="Dream星辰"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本网站是由本人在githun上需寻找的开源代码，经过漫长的改造最归成为我的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小邹同学">
+<meta property="og:url" content="https://gitee.com/Dream-happly/hexo-blog.git/index.html">
+<meta property="og:site_name" content="小邹同学">
+<meta property="og:description" content="本网站是由本人在githun上需寻找的开源代码，经过漫长的改造最归成为我的个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/Dream-happly/hexo-blog.git/img/logo1.jpg">
+<meta property="article:author" content="Dream星辰">
+<meta property="article:tag" content="小邹同学个人博客">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/Dream-happly/hexo-blog.git/img/logo1.jpg"><link rel="shortcut icon" href="/hexo-blog/img/logo.png"><link rel="canonical" href="https://gitee.com/Dream-happly/hexo-blog.git/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/hexo-blog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/hexo-blog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '小邹同学',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-10-14 23:05:52'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/10/14/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-10-14T05:09:07.178Z" itemprop="datePublished">2023-10-14</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/10/14/hello-world/">Hello World</a>
-    </h1>
-  
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/hexo-blog/img/logo1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/hexo-blog/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/hexo-blog/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/hexo-blog/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/hexo-blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/hexo-blog/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/hexo-blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/hexo-blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/hexo-blog/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/hexo-blog/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/hexo-blog/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/hexo-blog/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/hexo-blog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/hexo-blog/">小邹同学</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/hexo-blog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/hexo-blog/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/hexo-blog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/hexo-blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/hexo-blog/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/hexo-blog/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/hexo-blog/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/hexo-blog/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/hexo-blog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">小邹同学</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/Dream935" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="/hexo-blog/705037868@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/hexo-blog/2023/10/14/vue3/" title="vue3"><img class="post_bg" src="https://img2.baidu.com/it/u=4045139888,320238652&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=889&amp;h=500" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="vue3"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo-blog/2023/10/14/vue3/" title="vue3">vue3</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-14T15:02:11.810Z" title="发表于 2023-10-14 23:02:11">2023-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/hexo-blog/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">Vue3学习一、Vue基础学习新建vue文件
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+npm init vue@latest
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+切换到目录
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+cd 文件名
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+安装文件
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+cnpm install
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/10/14/hello-world/" data-id="clnpmmv380000osdac1hj5wu8" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+运行文件
 
+npm run dev
 
+基本语法：
+1234567891011121314&lt;template&gt; &lt;h3&gt;模板语法&lt;/h3&gt; &lt;p&gt;&#123;&#123; msg &#125;&#125;&lt;/p&gt;&lt;/template&gt;&lt;script&gt;export default&#123;  data()&#123;    return&#123;      msg:&quot;神奇的语法&quot;    &#125;  &#125;&#125;&lt;/script&gt;
 
-  
+属性绑定：
+如果想要在html代码中使用标签需要使用v-bind标签来使用：v-bind可以是省略直接使用双引号代替：。
+12345678910111213141516171819202122232425&lt;!-- html文件 --&gt;&lt;template& ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/hexo-blog/2023/10/14/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/" title="爬虫学习"><img class="post_bg" src="https://img1.baidu.com/it/u=2628701950,2035046880&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=288" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="爬虫学习"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo-blog/2023/10/14/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/" title="爬虫学习">爬虫学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-14T15:01:34.323Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/hexo-blog/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">Scrapy 简介
+Scrapy是Python开发的一个快速、高层次的屏幕抓取和web抓取框架，用于抓取web站点并从页面中提取结构化的数据。Scrapy用途广泛，可以用于数据挖掘、监测和自动化测试。
+Scrapy吸引人的地方在于它是一个框架，任何人都可以根据需求方便的修改。它也提供了多种类型爬虫的基类，如BaseSpider、sitemap爬虫等，最新版本又提供了web2.0爬虫的支持。
+Scrapy 架构
 
+架构图
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+Scrapy Engine(引擎)： 负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。
+Scheduler(调度器)： 它负责接受引擎发送过来的Request请求，并按照一定的方式进行整理排列，入队，当引擎需要时，交还给引擎。
+Downloader（下载器）： 负责下载 Scrapy Engine(引擎)发送的所有Requests请求，并将其获取到的Responses交还给Scrapy Engine(引擎)，由引擎交给Spider来处理。
+Spider（爬虫）： 它负责处理所有Responses,从中分 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/hexo-blog/2023/10/14/vue3%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" title="vue3基础学习"><img class="post_bg" src="https://img2.baidu.com/it/u=4045139888,320238652&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=889&amp;h=500" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="vue3基础学习"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo-blog/2023/10/14/vue3%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" title="vue3基础学习">vue3基础学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-14T15:01:34.320Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/hexo-blog/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">Vue3学习一、Vue基础学习新建vue文件
 
-  
-    
+npm init vue@latest
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li></ul>
-    </div>
-  </div>
+切换到目录
 
+cd 文件名
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/10/14/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+安装文件
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+cnpm install
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+运行文件
 
+npm run dev
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+基本语法：
+1234567891011121314&lt;template&gt; &lt;h3&gt;模板语法&lt;/h3&gt; &lt;p&gt;&#123;&#123; msg &#125;&#125;&lt;/p&gt;&lt;/template&gt;&lt;script&gt;export default&#123;  data()&#123;    return&#123;      msg:&quot;神奇的语法&quot;    &#125;  &#125;&#125;&lt;/script&gt;
 
+属性绑定：
+如果想要在html代码中使用标签需要使用v-bind标签来使用：v-bind可以是省略直接使用双引号代替：。
+12345678910111213141516171819202122232425&lt;!-- html文件 --&gt;&lt;template& ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/hexo-blog/2023/10/14/python/" title="python基础"><img class="post_bg" src="https://pic.rmb.bdstatic.com/bjh/down/97bad9500b845ce3144b3702fb951983.jpeg" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="python基础"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo-blog/2023/10/14/python/" title="python基础">python基础</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-14T15:01:34.318Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/hexo-blog/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">python基础
+一 数据类型list [列表]name_list &#x3D; [“你好”,”知道”]
+tuple (元组)agea_tuple&#x3D; （18，19，20）
+dict {字典}person  &#x3D; {‘name ‘: ‘张宇’，’age’:19}
+格式：变量的名字 &#x3D; {‘key’ : ‘velay’}
 
+变量没有类型，只有数据有类型
 
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+类型转换整形转换成字符串str()
+int –&gt;str()
+
+只要字符串有内容，那么强制类型转换为bool的时候那么就返回true
+
+运算符
+
+and 与 两边的数据必须全部都是true 只要有一段返回的是false 那么就返回false 
+
+原样输出：print(‘我的名字是：%s’ % name)
+if关键字的语句结构
+if 判断条件
+流程控制语句for语句
+格式 ： for 变量 in 要遍历的数据：
+​							方法体
+12345678910111213//i是字符串中的一个又一个字符的变量//s是代表的是要遍历的数据s = &quot;china&quot;for i in s:    pr ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/hexo-blog/2023/10/14/markdown%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/" title="markdown文件配置"><img class="post_bg" src="https://img0.baidu.com/it/u=3425868493,3104015061&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=1199&amp;h=800" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="markdown文件配置"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo-blog/2023/10/14/markdown%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/" title="markdown文件配置">markdown文件配置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-14T15:01:34.314Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/hexo-blog/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">一、markdown 文件配置博客文件配置1、主页面配置Front-matter 是 markdown 文件最上方以 — 分隔的区域，用于指定个别档案的变数。
+
+Page Front-matter 用于页面配置
+Post Front-matter 用于文章页配置
 
 
 
 
-<script src="/js/script.js"></script>
+写法
+解释
 
 
 
+title
+【必需】页面标题
 
 
-  </div>
-</body>
-</html>
+date
+【必填】页面创建时间
+
+
+type
+【必填】标签，分类和友情链接三个页面需要配置
+
+
+updated
+【可选】页面更新日期
+
+
+description
+【可选】页面描述
+
+
+keywords
+【可选】页面关键字
+
+
+comments
+【可选】显示页面评论模块 (默认 true)
+
+
+top_img
+【可选】页面顶部图片
+
+
+mathjax
+【可选】显示 katex (当设置 katex 的 per_page: false 时，才需要配置，默认 false)
+
+
+aside
+【可选】显示侧边栏 (默认 true)
+
+
+aplayer
+【可选】在需要的页面加载 aplayer 的 js 和 css,请参考文章下面的音乐 配置
+
+
+highlight_shrink ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/hexo-blog/2023/10/14/java%E5%AD%A6%E4%B9%A0/" title="java学习"><img class="post_bg" src="https://tse4-mm.cn.bing.net/th/id/OIP-C._-9wi0UmbJ3HNh7Eq22nMwHaEo?pid=ImgDet&amp;rs=1" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="java学习"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo-blog/2023/10/14/java%E5%AD%A6%E4%B9%A0/" title="java学习">java学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-14T15:01:34.312Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/hexo-blog/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">day1IDEA 快速键
+
+
+快捷键组合
+实现效果
+
+
+
+psvm + Tab 键 &#x2F; main + Tab 键
+public static void main(String[] args)
+
+
+sout + Tab 键
+System.out.println()
+
+
+Ctrl + X
+删除当前行
+
+
+Ctrl +D
+复制当前行
+
+
+Alt+Insert(或右键 Generate)
+生成代码(如 get,set 方法,构造函数等)
+
+
+Ctrl+Alt+T
+生成 try catch （或者 Alt+enter 选择）
+
+
+CTRL+ALT+T
+把选中的代码放在 TRY{} IF{} ELSE{} 里
+
+
+Ctr+shift+U
+实现大小写之间的转化
+
+
+ALT+回车
+导入包,自动修正
+
+
+CTRL+ALT+L
+格式化代码
+
+
+CTRL+ALT+I
+自动缩进
+
+
+CTRL+E
+最近更改的代码
+
+
+fori
+生成 for (int i &#x3D; 0; i &lt; ; i++) {}
+
+
+Alt + &lt;–左右–&gt;键
+实现窗口左右更换（多窗口）
+
+
+Ctrl + 鼠标 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/hexo-blog/2023/10/14/java%E4%BB%A3%E7%A0%81/" title="java代码"><img class="post_bg" src="https://ts1.cn.mm.bing.net/th/id/R-C.db3836610f631c4d06bdde4fd923e98f?rik=qaf5de1wCMNaRw&amp;riu=http%3a%2f%2fseopic.699pic.com%2fphoto%2f50093%2f5337.jpg_wh1200.jpg&amp;ehk=Oe3ZIbrBYnhQ0zqIu%2ftsRSE8srtaRlewEtSIg3sp6Zw%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="java代码"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo-blog/2023/10/14/java%E4%BB%A3%E7%A0%81/" title="java代码">java代码</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-14T15:01:34.309Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/hexo-blog/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">123456789101112131415161718192021222324252627//斐波那契数列public class demo10 &#123;    public static void main(String[] args) &#123;        EE d = new EE();        System.out.println(&quot;斐波那契数列前7等于&quot;+d.ShuLie(1));        &#125;    &#125;&#125;class EE&#123;    // 斐波那契数列    public int ShuLie(int k)&#123;        if (k&gt;=1)&#123;            if (k==1|| k==2)            return 1;            else &#123;                return ShuLie(k-1)+ShuLie(k-2);            &#125;        &#125;        else &#12 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/hexo-blog/2023/10/14/hexo%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA/" title="hexo基础搭建"><img class="post_bg" src="https://img2.baidu.com/it/u=567357414,4240886412&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=500" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="hexo基础搭建"></a></div><div class="recent-post-info"><a class="article-title" href="/hexo-blog/2023/10/14/hexo%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA/" title="hexo基础搭建">hexo基础搭建</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-14T15:01:34.300Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/hexo-blog/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">1.前言
+博客搭建过程遇到任何问题，优先在本页面搜索，检查是否已经有该配置教程。
+遇到问题可以优先在文章评论区留言，注意留言时请填写正确的邮箱以确保能收到站长的回复。
+实在解决不了的问题可添加站长的微信进行交流，备注自己的个人信息。
+
+2.环境与工具准备本教程主要面对的是Windows用户
+
+操作系统：Windows10
+Node
+Git
+Hexo
+文本编辑器(强烈推荐VSCODE)
+GitHub 帐号
+一个域名（强烈推荐买个域名）
+云服务器（可选）
+
+3.Node的安装
+打开Node官网，下载和自己系统相配的Node的安装程序，否则会出现安装问题。下载地址：https://nodejs.org/en/download/我个人的版本是 12.19.0，目前版本已经更新到19.0.0，按照个人经验，可以选个低一些的版本，可以和我的一样，否则后面会出现各种不兼容的问题！我之前就是安装16的，系统无法识别，如果大家遇到问题建议选个低版本的！历史版本下载页面：https://nodejs.org/en/download/releases/
+
+下载后安装，安装的目录可以使用默认目录【C:&#x2 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/hexo-blog/img/logo1.jpg" onerror="this.onerror=null;this.src='/hexo-blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Dream星辰</div><div class="author-info__description">本网站是由本人在githun上需寻找的开源代码，经过漫长的改造最归成为我的个人博客</div></div><div class="card-info-data site-data is-center"><a href="/hexo-blog/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/hexo-blog/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/hexo-blog/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Dream935"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Dream935" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="/hexo-blog/705037868@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/hexo-blog/2023/10/14/vue3/" title="vue3"><img src="https://img2.baidu.com/it/u=4045139888,320238652&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=889&amp;h=500" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="vue3"/></a><div class="content"><a class="title" href="/hexo-blog/2023/10/14/vue3/" title="vue3">vue3</a><time datetime="2023-10-14T15:02:11.810Z" title="发表于 2023-10-14 23:02:11">2023-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hexo-blog/2023/10/14/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/" title="爬虫学习"><img src="https://img1.baidu.com/it/u=2628701950,2035046880&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=288" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="爬虫学习"/></a><div class="content"><a class="title" href="/hexo-blog/2023/10/14/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/" title="爬虫学习">爬虫学习</a><time datetime="2023-10-14T15:01:34.323Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hexo-blog/2023/10/14/vue3%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" title="vue3基础学习"><img src="https://img2.baidu.com/it/u=4045139888,320238652&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=889&amp;h=500" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="vue3基础学习"/></a><div class="content"><a class="title" href="/hexo-blog/2023/10/14/vue3%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" title="vue3基础学习">vue3基础学习</a><time datetime="2023-10-14T15:01:34.320Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hexo-blog/2023/10/14/python/" title="python基础"><img src="https://pic.rmb.bdstatic.com/bjh/down/97bad9500b845ce3144b3702fb951983.jpeg" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="python基础"/></a><div class="content"><a class="title" href="/hexo-blog/2023/10/14/python/" title="python基础">python基础</a><time datetime="2023-10-14T15:01:34.318Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hexo-blog/2023/10/14/markdown%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/" title="markdown文件配置"><img src="https://img0.baidu.com/it/u=3425868493,3104015061&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=1199&amp;h=800" onerror="this.onerror=null;this.src='/hexo-blog/img/404.jpg'" alt="markdown文件配置"/></a><div class="content"><a class="title" href="/hexo-blog/2023/10/14/markdown%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE/" title="markdown文件配置">markdown文件配置</a><time datetime="2023-10-14T15:01:34.314Z" title="发表于 2023-10-14 23:01:34">2023-10-14</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/hexo-blog/categories/%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">学习</span><span class="card-category-list-count">8</span></a></li>
+            </ul></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/hexo-blog/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">8</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">8</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2023-10-09T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-10-14T15:05:52.504Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Dream星辰</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">I wish you to become your own sun, no need to rely on who's light.<p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/hexo-blog/js/utils.js"></script><script src="/hexo-blog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["Welcome to 小邹同学个人博客 のDream Home!🤣🤣🤣","Hope you have a nice day!🍭🍭🍭"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = 'Welcome to 小邹同学个人博客 のDream Home!🤣🤣🤣'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="小邹,同学,你,真棒" data-fontsize="15px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
